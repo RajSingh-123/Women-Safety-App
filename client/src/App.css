@@ -1,0 +1,249 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+/* App.css */
+
+
+.h-custom {
+  height: 100vh;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.image-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+}
+
+.form-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+
+.card-registration {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-registration-2 {
+  border-radius: 15px;
+}
+
+.p-5 {
+  padding: 3rem;
+}
+
+.fw-normal {
+  font-weight: normal;
+}
+
+.mb-5 {
+  margin-bottom: 3rem;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-white:hover {
+  color: #e0e0e0;
+}
+
+.mdb-input {
+  width: 100%;
+}
+
+.mdb-btn {
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.mdb-btn:hover {
+  background-color: #e0e0e0;
+  transform: translateY(-2px);
+}
+
+.mdb-checkbox {
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .image-col, .form-col {
+    padding: 1rem;
+  }
+
+  .p-5 {
+    padding: 2rem;
+  }
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: #fff;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #f39c12;
+}
+
+/* SOS Button Styles */
+.sos-button {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.sos-button:hover {
+  background-color: #c0392b;
+  transform: scale(1.1);
+}
+
+.sos-button:active {
+  background-color: #a93226;
+}
+
+/* Location Display Styles */
+.location-display {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #ecf0f1;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Emergency Contacts Styles */
+.emergency-contacts {
+  display: block;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  animation: slideInFromLeft 1s ease-in-out;
+}
+
+.emergency-contacts h2 {
+  margin-top: 0;
+}
+
+.emergency-contacts ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.emergency-contacts li {
+  margin: 10px 0;
+}
+/* App.css */
+
+.contacts-container {
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+}
+
+.contact-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  position: bottom;
+  bottom: 100%;
+  width: 100%;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
